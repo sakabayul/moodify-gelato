@@ -13,7 +13,6 @@
     outline: none;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    transition: 0.5s;
     text-transform: capitalize;
 }
 html{
@@ -75,7 +74,6 @@ header .fa-bars{
     padding: 0.5rem 1.2rem;
     border-radius: 1rem;
     font-size: 1.7rem;
-    transition: 0.5s;
     display: inline-block;
 }
 .contact-btn:hover{
@@ -91,7 +89,7 @@ header .fa-bars{
 
 /* Start Gambar Home Page */
 .home{
-    padding: 0rem 7%;
+    padding: 1.7rem 7%;
     background: url(../images/background.png);
     min-height: 100vh;
     height: 100%;
@@ -150,11 +148,9 @@ header .fa-bars{
     border: 0.1rem solid var(--warna-coklat);
     border-radius: 1rem;
     font-size: 1.7rem;
-    transition: 0.5s;
     display: inline-block;
 }
 .home-text-content a:hover{
-    transform: scale(1.1);
     background: var(--warna-coklat);
 }
 /* End Gambar Home Page */
@@ -275,11 +271,8 @@ header .fa-bars{
     width: 45rem;
     object-fit: cover;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(29, 29, 35, 1);
+    box-shadow: 0 0 0.1rem rgba(29, 29, 35, 1);
     border: .3rem solid var(--warna-dark);
-}
-.inner-gallery .gallery-image:hover img{
-    transform: scale(1.1);
 }
 /* End Content Gallery */
 
@@ -368,14 +361,13 @@ header .fa-bars{
     border: 0.1rem solid var(--warna-coklat);
     color: var(--warna-coklat);
     padding: 0.5rem 1.5rem;
-    transition: 0.3s;
     cursor: pointer;
 }
 .menu-food-text p:hover span{
     border: 0.1rem solid var(--warna-putih);
     background: var(--warna-coklat);
     color: var(--warna-putih);
-    transform: scale(1.1);
+
 }
 /* End Content Menu */
 
@@ -383,6 +375,7 @@ header .fa-bars{
 
 /* Start Content Before Footer */
 .before{
+    padding: 1.7rem 7%;
     background: url(../images/before\ footer.png) no-repeat;
     background-size: cover;
     background-position: center center;
@@ -433,7 +426,7 @@ header .fa-bars{
 /* Start Content Footer */
 .footer{
     background: var(--warna-dark);
-    padding: 3rem 10rem;
+    padding: 1.7rem 7%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,11 +458,9 @@ header .fa-bars{
 }
 .social-icon a:hover {
     background-color: var(--warna-dark);
-    transition: 0.5s;
 }
 .social-icon a:hover i {
     color: var(--warna-putih);
-    transition: 0.5s;
 }
 .footer-nav ul li a:hover {
     opacity: 1;
