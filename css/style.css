@@ -25,7 +25,7 @@ html{
 
 /* Start Tempat Edit Navigasibar */
 .header{
-    padding: 1.7rem 7%;
+    padding: 1.8rem 7%;
     position: fixed;
     left: 0;
     right: 0;
@@ -71,14 +71,14 @@ header .fa-bars{
 .contact-btn{
     color: var(--warna-putih);
     background-color: var(--warna-coklat);
-    padding: 0.5rem 1.2rem;
+    padding: 1rem 1.8rem;
     border-radius: 1rem;
     font-size: 1.7rem;
     display: inline-block;
 }
 .contact-btn:hover{
     background: var(--warna-putih);
-    color: var(--warna-hitam);
+    color: var(--warna-dark);
 }
 .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -144,7 +144,7 @@ header .fa-bars{
 }
 .home-text-content a{
     color: white;
-    padding: 0.6rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: 0.1rem solid var(--warna-coklat);
     border-radius: 1rem;
     font-size: 1.7rem;
@@ -198,7 +198,7 @@ header .fa-bars{
     margin-bottom: 1.5rem;
 }
 .about-text-content p{
-    color: var(--warna-hitam);
+    color: var(--warna-dark);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
@@ -226,7 +226,7 @@ header .fa-bars{
     padding: 0 4rem;
 }
 .quality-content h1{
-    color: var(--warna-hitam);
+    color: var(--warna-dark);
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
@@ -271,7 +271,7 @@ header .fa-bars{
     width: 45rem;
     object-fit: cover;
     border-radius: 1rem;
-    box-shadow: 0 0 0.1rem rgba(29, 29, 35, 1);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     border: .3rem solid var(--warna-dark);
 }
 /* End Content Gallery */
@@ -302,7 +302,7 @@ header .fa-bars{
     padding: 1rem 0;
 }
 .food-main-content p{
-    color: var(--warna-hitam);
+    color: var(--warna-dark);
     font-size: 1.7rem;
     text-align: center;
     padding: 1rem 0;
@@ -379,7 +379,7 @@ header .fa-bars{
     background: url(../images/before\ footer.png) no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 77vh;
+    min-height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,30 +415,9 @@ header .fa-bars{
     margin-bottom: 1.5rem;
 }
 .before-text-content p{
-    color: var(--warna-hitam);
+    color: var(--warna-dark);
     font-size: 1.7rem;
     line-height: 3.5rem;
-}
-/* End Content Before Footer */
-
-
-
-/* Start Content Footer */
-.footer{
-    background: var(--warna-dark);
-    padding: 1.7rem 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main-footer{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-.footer-navbar{
-    margin-top: 3rem;
 }
 .social-icon {
     display: flex;
@@ -461,6 +440,27 @@ header .fa-bars{
 }
 .social-icon a:hover i {
     color: var(--warna-putih);
+}   
+/* End Content Before Footer */
+
+
+
+/* Start Content Footer */
+.footer{
+    background: var(--warna-dark);
+    padding: 1.7rem 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-navbar{
+    margin-top: 3rem;
 }
 .footer-nav ul li a:hover {
     opacity: 1;
@@ -475,7 +475,8 @@ header .fa-bars{
     color: var(--warna-coklat);
 }
 .footer p{
-    margin-top: 4rem;
+    margin-top: 2rem;
+    padding: 2rem;
     font-size: 1.5rem;
     color: var(--warna-putih);
 }
@@ -508,6 +509,7 @@ header .fa-bars{
         font-size: 2.9rem;
     }
     .navbar{
+        width: 30rem;
         position:absolute;
         top:100%; left:0; right:0;
         background:var(--warna-dark);
@@ -515,8 +517,8 @@ header .fa-bars{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .navbar a{
-        font-size: 3rem;
-        display: block;
+        font-size: 2rem;
+        display: flex;
         margin: 2rem;
         padding: 2rem;
         border-radius: 1rem;
@@ -566,7 +568,7 @@ header .fa-bars{
         width: 100%;
     }
     .quality-content h1{
-        color: var(--warna-hitam)
+        color: var(--warna-dark)
     }
     /* End quality */
 
@@ -577,10 +579,16 @@ header .fa-bars{
         padding: 1rem;
     }
     /* End Enjoy */
-    
+
+    /* start before */
+    .before{
+        min-height: 77vh;
+    }
+    /* start before */
+
     /* Start navbar */
     .footer-navbar a{
-        display: block;
+        display: inline;
     }
     /* End navbar */
 }
