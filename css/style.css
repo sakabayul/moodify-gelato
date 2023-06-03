@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --warna-coklat:#e58f00;
+    --warna-pink:#ec72ab;
+    --warna-putih: #fff;
+    --warna-hitam: #333;
+    --warna-dark: #1d1d23;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    background-color: var(--warna-hitam);
+}
+
+
+
+/* Start Tempat Edit Navigasibar */
+.header{
+    padding: 1.7rem 7%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--warna-dark);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: var(--warna-coklat);
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid var(--warna-coklat);
+    display: none;
+}
+.logo img{
+    width: 14rem;
+}
+.navbar a{
+    color: var(--warna-putih);
+    margin: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+}
+.navbar a:hover{
+    color: var(--warna-coklat);
+}
+.icons div{
+    color: var(--warna-putih);
+    font-size: 2rem;
+    margin-right: 1rem;
+    display: none;
+}
+.icons div:hover{
+    cursor: pointer;
+}
+.contact-btn{
+    color: var(--warna-putih);
+    background-color: var(--warna-coklat);
+    padding: 0.5rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    transition: 0.5s;
+    display: inline-block;
+}
+.contact-btn:hover{
+    background: var(--warna-putih);
+    color: var(--warna-hitam);
+}
+.navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+/* End Tempat Edit Navigasibar */
+
+
+
+/* Start Gambar Home Page */
+.home{
+    padding: 0rem 7%;
+    background: url(../images/background.png);
+    min-height: 100vh;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 15rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.home-inner-content{
+    flex: 1 1 45rem;
+}
+.home-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.home-image img{
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, -40%);
+    animation: mymove 5s infinite ease-in-out;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%   {top: 15px;}
+    75%   {top: 10px;}
+    100%   {top: 0px;}
+}
+.home-text-content{
+    padding: 13rem 8rem;
+}
+.home-text-content h1{
+    margin-top: 12rem;
+    font-size: 4rem;
+    color: var(--warna-coklat);
+}
+.home-text-content p{
+    color: var(--warna-putih);
+    font-size: 1.7rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+    line-height: 2rem;
+}
+.home-text-content a{
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: 0.1rem solid var(--warna-coklat);
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    transition: 0.5s;
+    display: inline-block;
+}
+.home-text-content a:hover{
+    transform: scale(1.1);
+    background: var(--warna-coklat);
+}
+/* End Gambar Home Page */
+
+
+
+/* Start Content About */
+.about{
+    padding: 2rem 7%;
+    background: url(../images/background\ about.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.about-content{
+    flex: 1 1 45rem;
+}
+.about-inner-content{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.about-content .about-inner-content img{
+    width: 80%;
+    margin-left: 10rem;
+}
+.about-text-content{
+    padding: 0 4rem;
+}
+.about-text-content h1{
+    color: var(--warna-coklat);
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.about-text-content p{
+    color: var(--warna-hitam);
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+}
+/* End Content About */
+
+
+
+/* Start Content Quality */
+.quality{
+    padding: 4rem 7%;
+    background-image: linear-gradient(60.34deg, var(--warna-coklat) 52.45%, var(--warna-pink) 52.45%);
+    min-height: 50vh;
+}
+.main-quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+.main-inner-quality{
+    flex: 1 1 40rem;
+}
+.quality-content{
+    padding: 0 4rem;
+}
+.quality-content h1{
+    color: var(--warna-hitam);
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.quality-content p{
+    color: var(--warna-putih);
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+}
+.qulity-image img{
+    width: 100%;
+    object-fit: cover;
+}
+/* End Content Quality */
+
+
+
+/* Start Content Gallery */
+.gallery{
+    padding: 8rem 7%;
+    background: var(--warna-hitam);
+}
+.gallery h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: var(--warna-coklat);
+    letter-spacing: 1px;
+}
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.inner-gallery{
+    flex: 0 1 30rem;
+    
+}
+.inner-gallery .gallery-image img{
+    height: 100%;
+    width: 45rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(29, 29, 35, 1);
+    border: .3rem solid var(--warna-dark);
+}
+.inner-gallery .gallery-image:hover img{
+    transform: scale(1.1);
+}
+/* End Content Gallery */
+
+
+
+/* Start Content Enjoy */
+.enjoy-our-food{
+    padding: 2rem 7%;
+    background: url(../images/enjoye.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-main-content{
+    width: 40%;
+    border: 0.4rem solid var(--warna-putih);
+    padding: 2rem;
+}
+.food-main-content h1{
+    color: var(--warna-coklat);
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+.food-main-content p{
+    color: var(--warna-hitam);
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 3.5rem;
+}
+/* End Content Enjoy */
+
+
+
+/* Start Content Menu */
+.our-menu-food{
+    padding: 8rem 7%;
+    background-color: var(--warna-hitam);
+}
+.our-menu-food h1{
+    color: var(--warna-coklat);
+    font-size: 4rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.main-menu-food{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.inner-menu-food{
+    background: var(--warna-dark);
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
+    border: 0.1rem solid var(--warna-putih);
+    flex: 0 1 30rem;
+}
+.menu-food-content img{
+    height: 100%;
+    width: 45rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.menu-food-text{
+    padding: 2rem 2rem;
+}
+.menu-food-text h2{
+    color: var(--warna-coklat);
+    font-size: 3rem;
+}
+.menu-food-text p{
+    color:var(--warna-putih);
+    font-size:1.7rem;
+    margin: 2rem 0;
+}
+.menu-food-text p span{
+    border: 0.1rem solid var(--warna-coklat);
+    color: var(--warna-coklat);
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.menu-food-text p:hover span{
+    border: 0.1rem solid var(--warna-putih);
+    background: var(--warna-coklat);
+    color: var(--warna-putih);
+    transform: scale(1.1);
+}
+/* End Content Menu */
+
+
+
+/* Start Content Before Footer */
+.before{
+    background: url(../images/before\ footer.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--warna-coklat);
+}
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.before-content{
+    flex: 1 1 45rem;
+}
+.before-inner-content{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.before-content .before-inner-content img{
+    width: 80%;
+    margin-left: 10rem;
+}
+.before-text-content{
+    padding: 0 4rem;
+}
+.before-text-content h1{
+    color: var(--warna-putih);
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.before-text-content p{
+    color: var(--warna-hitam);
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+}
+/* End Content Before Footer */
+
+
+
+/* Start Content Footer */
+.footer{
+    background: var(--warna-dark);
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-navbar{
+    margin-top: 3rem;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+}
+.social-icon a {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--warna-putih);
+    margin: 1rem;
+    border-radius: 50%;
+}
+.social-icon a i {
+    font-size: 3rem;
+    color: var(--warna-dark);
+    opacity: 0.9;
+}
+.social-icon a:hover {
+    background-color: var(--warna-dark);
+    transition: 0.5s;
+}
+.social-icon a:hover i {
+    color: var(--warna-putih);
+    transition: 0.5s;
+}
+.footer-nav ul li a:hover {
+    opacity: 1;
+}
+.footer-navbar a{
+    color: var(--warna-putih);
+    font-size: 1.8rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.footer-navbar a:hover{
+    color: var(--warna-coklat);
+}
+.footer p{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    color: var(--warna-putih);
+}
+.footer p a{
+    font-weight: 500;
+    color: var(--warna-coklat);
+}
+/* End Content Footer */
+
+
+
+/* Start Responsive */
+@media (max-width:1000px) {
+    html{
+        font-size: 45%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    /* Start Navigationbar */
+    .header{
+        padding: 3rem;
+    }
+    .icons div{
+        display: initial;
+        font-size: 2.9rem;
+    }
+    .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:var(--warna-dark);
+        border-top: 0.1rem solid rgb(255, 255, 255);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .navbar a{
+        font-size: 3rem;
+        display: block;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background: var(--warna-hitam);
+    }
+    /* End Navigationbar */
+    
+    /* Start home css desing */
+    .home-text-content{
+        padding: 0 2rem;
+        margin-top: 46rem;
+    }
+    
+    .main-home{
+        padding: 2rem 0;
+    }
+    .home{
+        padding-top: 10rem;
+    }
+    .home-image img{
+        transform: translate(0%, 0%);
+    }
+    /* End home css desing */
+
+    /* Start about */
+    .about{
+        min-height: 92vh;
+    }
+    .about-content .about-inner-content img{
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    /* End about */
+
+    /* Start quality */
+    .quality{
+        display: flex;
+        min-height: 92vh;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-inner-quality{
+        flex: 1 1 60rem;
+    }
+    .qulity-image img{
+        width: 100%;
+    }
+    .quality-content h1{
+        color: var(--warna-hitam)
+    }
+    /* End quality */
+
+    /* Start Enjoy */
+    .food-main-content{
+        width: 100%;
+        border: 0.4rem solid white;
+        padding: 1rem;
+    }
+    /* End Enjoy */
+    
+    /* Start navbar */
+    .footer-navbar a{
+        display: block;
+    }
+    /* End navbar */
+}
+/* End Responsive */
+
+
+
+
+
+
+
+
