@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 :root{
-    --warna-coklat:#e58f00;
-    --warna-pink:#ec72ab;
-    --warna-putih: #fff;
-    --warna-hitam: #333;
-    --warna-dark: #1d1d23;
+    --warna-wheat:#d8c3a5;
+    --warna-putih: #eae7dc;
+    --warna-abu-abu: #8e8d8a;
+    --warna-crimson: #e85a4f;
+    --warna-lightcoral: #e98074;
 }
 *{
     padding: 0;
@@ -18,14 +18,14 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
-    background-color: var(--warna-hitam);
+    background-color: var(--warna-abu-abu);
 }
 
 
 
 /* Start Tempat Edit Navigasibar */
 .header{
-    padding: 1.8rem 7%;
+    padding: .5rem 7%;
     position: fixed;
     left: 0;
     right: 0;
@@ -33,34 +33,37 @@ html{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: var(--warna-dark);
+    background: var(--warna-putih);
 }
 header #toggler{
     display: none;
 }
 header .fa-bars{
     font-size: 3rem;
-    color: var(--warna-coklat);
+    color: var(--warna-crimson);
     border-radius: .5rem;
     padding:.5rem 1.5rem;
     cursor: pointer;
-    border:.1rem solid var(--warna-coklat);
+    border:.1rem solid var(--warna-crimson);
     display: none;
 }
-.logo img{
-    width: 14rem;
+.logo a{
+    color: var(--warna-crimson);
+    font-weight: bold;
+    font-size: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar a{
-    color: var(--warna-putih);
+    color: var(--warna-crimson);
     margin: 0.5rem;
     padding: 1.5rem;
     font-size: 1.7rem;
 }
 .navbar a:hover{
-    color: var(--warna-coklat);
+    color: var(--warna-abu-abu);
 }
 .icons div{
-    color: var(--warna-putih);
+    color: var(--warna-crimson);
     font-size: 2rem;
     margin-right: 1rem;
     display: none;
@@ -70,20 +73,21 @@ header .fa-bars{
 }
 .contact-btn{
     color: var(--warna-putih);
-    background-color: var(--warna-coklat);
+    background-color: var(--warna-crimson);
     padding: 1rem 1.8rem;
     border-radius: 1rem;
     font-size: 1.7rem;
     display: inline-block;
 }
 .contact-btn:hover{
-    background: var(--warna-putih);
-    color: var(--warna-dark);
+    background: var(--warna-lightcoral);
+    color: var(--warna-putih);
 }
 .navbar.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 /* End Tempat Edit Navigasibar */
+
 
 
 
@@ -133,7 +137,7 @@ header .fa-bars{
 .home-text-content h1{
     margin-top: 12rem;
     font-size: 4rem;
-    color: var(--warna-coklat);
+    color: var(--warna-crimson);
 }
 .home-text-content p{
     color: var(--warna-putih);
@@ -143,15 +147,16 @@ header .fa-bars{
     line-height: 2rem;
 }
 .home-text-content a{
-    color: white;
+    color: var(--warna-putih);
+    background: var(--warna-crimson);
     padding: 1rem 1.5rem;
-    border: 0.1rem solid var(--warna-coklat);
     border-radius: 1rem;
     font-size: 1.7rem;
     display: inline-block;
 }
 .home-text-content a:hover{
-    background: var(--warna-coklat);
+    background: var(--warna-lightcoral);
+    color: var(--warna-putih);
 }
 /* End Gambar Home Page */
 
@@ -193,12 +198,12 @@ header .fa-bars{
     padding: 0 4rem;
 }
 .about-text-content h1{
-    color: var(--warna-coklat);
+    color: var(--warna-crimson);
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 .about-text-content p{
-    color: var(--warna-dark);
+    color: var(--warna-lightcoral);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
@@ -209,7 +214,7 @@ header .fa-bars{
 /* Start Content Quality */
 .quality{
     padding: 4rem 7%;
-    background-image: linear-gradient(60.34deg, var(--warna-coklat) 52.45%, var(--warna-pink) 52.45%);
+    background-image: linear-gradient(60.34deg, var(--warna-putih) 52.45%, var(--warna-wheat) 52.45%);
     min-height: 50vh;
 }
 .main-quality{
@@ -226,12 +231,12 @@ header .fa-bars{
     padding: 0 4rem;
 }
 .quality-content h1{
-    color: var(--warna-dark);
+    color: var(--warna-crimson);
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 .quality-content p{
-    color: var(--warna-putih);
+    color: var(--warna-lightcoral);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
@@ -246,13 +251,13 @@ header .fa-bars{
 /* Start Content Gallery */
 .gallery{
     padding: 8rem 7%;
-    background: var(--warna-hitam);
+    background: var(--warna-abu-abu);
 }
 .gallery h1{
     font-size: 4rem;
     text-align: center;
     padding-bottom: 3rem;
-    color: var(--warna-coklat);
+    color: var(--warna-putih);
     letter-spacing: 1px;
 }
 .main-gallery{
@@ -263,16 +268,16 @@ header .fa-bars{
     flex-wrap: wrap;
 }
 .inner-gallery{
-    flex: 0 1 30rem;
+    flex: 0 1 1rem;
     
 }
 .inner-gallery .gallery-image img{
-    height: 100%;
-    width: 45rem;
+    width: auto;
+    height: 36rem;
     object-fit: cover;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    border: .3rem solid var(--warna-dark);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+    border: .3rem solid var(--warna-lightcoral);
 }
 /* End Content Gallery */
 
@@ -292,17 +297,17 @@ header .fa-bars{
 }
 .food-main-content{
     width: 40%;
-    border: 0.4rem solid var(--warna-putih);
+    border: 0.4rem solid var(--warna-crimson);
     padding: 2rem;
 }
 .food-main-content h1{
-    color: var(--warna-coklat);
+    color: var(--warna-crimson);
     font-size: 4rem;
     text-align: center;
     padding: 1rem 0;
 }
 .food-main-content p{
-    color: var(--warna-dark);
+    color: var(--warna-lightcoral);
     font-size: 1.7rem;
     text-align: center;
     padding: 1rem 0;
@@ -315,10 +320,10 @@ header .fa-bars{
 /* Start Content Menu */
 .our-menu-food{
     padding: 8rem 7%;
-    background-color: var(--warna-hitam);
+    background-color: var(--warna-abu-abu);
 }
 .our-menu-food h1{
-    color: var(--warna-coklat);
+    color: var(--warna-putih);
     font-size: 4rem;
     text-align: center;
     padding: 0.5rem 0;
@@ -331,11 +336,11 @@ header .fa-bars{
     flex-wrap: wrap;
 }
 .inner-menu-food{
-    background: var(--warna-dark);
+    background: var(--warna-putih);
     margin-bottom: 3rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
-    border: 0.1rem solid var(--warna-putih);
+    box-shadow: 0 .5 1rem rgba(0, 0, 0, 0.5);
+    border: 0.3rem solid var(--warna-lightcoral);
     flex: 0 1 30rem;
 }
 .menu-food-content img{
@@ -344,28 +349,26 @@ header .fa-bars{
     object-fit: cover;
     border-radius: 1rem;
 }
-
 .menu-food-text{
     padding: 2rem 2rem;
 }
 .menu-food-text h2{
-    color: var(--warna-coklat);
+    color: var(--warna-crimson);
     font-size: 3rem;
 }
 .menu-food-text p{
-    color:var(--warna-putih);
+    color:var(--warna-lightcoral);
     font-size:1.7rem;
     margin: 2rem 0;
 }
 .menu-food-text p span{
-    border: 0.1rem solid var(--warna-coklat);
-    color: var(--warna-coklat);
+    background-color: var(--warna-crimson);
+    color: var(--warna-putih);
     padding: 0.5rem 1.5rem;
     cursor: pointer;
 }
 .menu-food-text p:hover span{
-    border: 0.1rem solid var(--warna-putih);
-    background: var(--warna-coklat);
+    background: var(--warna-lightcoral);
     color: var(--warna-putih);
 
 }
@@ -383,7 +386,6 @@ header .fa-bars{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--warna-coklat);
 }
 .main-about{
     display: flex;
@@ -415,28 +417,33 @@ header .fa-bars{
     margin-bottom: 1.5rem;
 }
 .before-text-content p{
-    color: var(--warna-dark);
+    color: var(--warna-putih);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
 .social-icon {
     display: flex;
     justify-content: center;
+
 }
 .social-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    padding: 1rem;
     background-color: var(--warna-putih);
     margin: 1rem;
     border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
 }
 .social-icon a i {
     font-size: 3rem;
-    color: var(--warna-dark);
+    color: var(--warna-crimson);
     opacity: 0.9;
 }
 .social-icon a:hover {
-    background-color: var(--warna-dark);
+    background-color: var(--warna-crimson);
 }
 .social-icon a:hover i {
     color: var(--warna-putih);
@@ -447,7 +454,7 @@ header .fa-bars{
 
 /* Start Content Footer */
 .footer{
-    background: var(--warna-dark);
+    background: var(--warna-putih);
     padding: 1.7rem 7%;
     display: flex;
     justify-content: center;
@@ -466,23 +473,23 @@ header .fa-bars{
     opacity: 1;
 }
 .footer-navbar a{
-    color: var(--warna-putih);
+    color: var(--warna-crimson);
     font-size: 1.8rem;
     margin: 1rem;
     padding: 1rem;
 }
 .footer-navbar a:hover{
-    color: var(--warna-coklat);
+    color: var(--warna-abu-abu);
 }
 .footer p{
     margin-top: 2rem;
     padding: 2rem;
     font-size: 1.5rem;
-    color: var(--warna-putih);
+    color: var(--warna-abu-abu);
 }
 .footer p a{
     font-weight: 500;
-    color: var(--warna-coklat);
+    color: var(--warna-lightcoral);
 }
 /* End Content Footer */
 
@@ -512,7 +519,7 @@ header .fa-bars{
         width: 30rem;
         position:absolute;
         top:100%; left:0; right:0;
-        background:var(--warna-dark);
+        background:var(--warna-wheat);
         border-top: 0.1rem solid rgb(255, 255, 255);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -522,7 +529,7 @@ header .fa-bars{
         margin: 2rem;
         padding: 2rem;
         border-radius: 1rem;
-        background: var(--warna-hitam);
+        background: var(--warna-putih);
     }
     /* End Navigationbar */
     
@@ -568,7 +575,7 @@ header .fa-bars{
         width: 100%;
     }
     .quality-content h1{
-        color: var(--warna-dark)
+        color: var(--warna-crimson)
     }
     /* End quality */
 
