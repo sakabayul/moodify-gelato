@@ -18,7 +18,7 @@
 html{
     font-size: 65%;
     scroll-behavior: smooth;
-    background-color: var(--warna-abu-abu);
+    background-color: var(--warna-putih);
 }
 
 
@@ -34,6 +34,7 @@ html{
     align-items: center;
     z-index: 100;
     background: var(--warna-putih);
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, .5);
 }
 header #toggler{
     display: none;
@@ -60,7 +61,7 @@ header .fa-bars{
     font-size: 1.7rem;
 }
 .navbar a:hover{
-    color: var(--warna-abu-abu);
+    color: var(--warna-crimson);
 }
 .icons div{
     color: var(--warna-crimson);
@@ -140,7 +141,7 @@ header .fa-bars{
     color: var(--warna-crimson);
 }
 .home-text-content p{
-    color: var(--warna-putih);
+    color: var(--warna-abu-abu);
     font-size: 1.7rem;
     margin-top: 0.8rem;
     margin-bottom: 1.2rem;
@@ -251,13 +252,12 @@ header .fa-bars{
 /* Start Content Gallery */
 .gallery{
     padding: 8rem 7%;
-    background: var(--warna-abu-abu);
 }
 .gallery h1{
     font-size: 4rem;
     text-align: center;
     padding-bottom: 3rem;
-    color: var(--warna-putih);
+    color: var(--warna-crimson);
     letter-spacing: 1px;
 }
 .main-gallery{
@@ -297,7 +297,7 @@ header .fa-bars{
 }
 .food-main-content{
     width: 40%;
-    border: 0.4rem solid var(--warna-crimson);
+    border: 0.4rem solid var(--warna-putih);
     padding: 2rem;
 }
 .food-main-content h1{
@@ -307,7 +307,7 @@ header .fa-bars{
     padding: 1rem 0;
 }
 .food-main-content p{
-    color: var(--warna-lightcoral);
+    color: var(--warna-abu-abu);
     font-size: 1.7rem;
     text-align: center;
     padding: 1rem 0;
@@ -320,10 +320,9 @@ header .fa-bars{
 /* Start Content Menu */
 .our-menu-food{
     padding: 8rem 7%;
-    background-color: var(--warna-abu-abu);
 }
 .our-menu-food h1{
-    color: var(--warna-putih);
+    color: var(--warna-crimson);
     font-size: 4rem;
     text-align: center;
     padding: 0.5rem 0;
@@ -454,38 +453,54 @@ header .fa-bars{
 
 /* Start Content Footer */
 .footer{
+    display: inline-block;
+    width: 100%;
+    padding-left: 3rem;
+    margin: 3rem 0;
+    box-sizing: border-box;
+    text-align: left;
     background: var(--warna-putih);
-    padding: 1.7rem 7%;
+}
+.footer img, .footer .footer-nav{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* footer img */
+.footer img{
+    float: left;
+    width: 15rem;
+    height: auto;
+}
+
+/* footer navbar */
+.footer-nav{
+    width: 60%;
+    height: auto;
+    margin-left: 11%;
+}
+.footer-navbar {
+    font-size: 1.8rem;
+    color: var(--warna-crimson);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-.main-footer{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-.footer-navbar{
-    margin-top: 3rem;
-}
-.footer-nav ul li a:hover {
-    opacity: 1;
 }
 .footer-navbar a{
     color: var(--warna-crimson);
-    font-size: 1.8rem;
-    margin: 1rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 .footer-navbar a:hover{
     color: var(--warna-abu-abu);
 }
 .footer p{
+    padding: .5rem;
     margin-top: 2rem;
-    padding: 2rem;
     font-size: 1.5rem;
     color: var(--warna-abu-abu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .footer p a{
     font-weight: 500;
@@ -522,6 +537,9 @@ header .fa-bars{
         background:var(--warna-wheat);
         border-top: 0.1rem solid rgb(255, 255, 255);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .footer-nav{
+        margin-left: 5%;
     }
     .navbar a{
         font-size: 2rem;
