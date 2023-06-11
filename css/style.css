@@ -61,7 +61,7 @@ header .fa-bars{
     font-size: 1.7rem;
 }
 .navbar a:hover{
-    color: var(--warna-crimson);
+    color: var(--warna-abu-abu);
 }
 .icons div{
     color: var(--warna-crimson);
@@ -97,7 +97,6 @@ header .fa-bars{
     padding: 1.7rem 7%;
     background: url(../images/background.png);
     min-height: 100vh;
-    height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,7 +140,7 @@ header .fa-bars{
     color: var(--warna-crimson);
 }
 .home-text-content p{
-    color: var(--warna-abu-abu);
+    color: var(--warna-putih);
     font-size: 1.7rem;
     margin-top: 0.8rem;
     margin-bottom: 1.2rem;
@@ -204,7 +203,7 @@ header .fa-bars{
     margin-bottom: 1.5rem;
 }
 .about-text-content p{
-    color: var(--warna-lightcoral);
+    color: var(--warna-abu-abu);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
@@ -237,7 +236,7 @@ header .fa-bars{
     margin-bottom: 1.5rem;
 }
 .quality-content p{
-    color: var(--warna-lightcoral);
+    color: var(--warna-abu-abu);
     font-size: 1.7rem;
     line-height: 3.5rem;
 }
@@ -356,7 +355,7 @@ header .fa-bars{
     font-size: 3rem;
 }
 .menu-food-text p{
-    color:var(--warna-lightcoral);
+    color:var(--warna-abu-abu);
     font-size:1.7rem;
     margin: 2rem 0;
 }
@@ -381,7 +380,7 @@ header .fa-bars{
     background: url(../images/before\ footer.png) no-repeat;
     background-size: cover;
     background-position: center center;
-    min-height: 75vh;
+    min-height: 76vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -602,6 +601,9 @@ header .fa-bars{
         width: 100%;
         border: 0.4rem solid white;
         padding: 1rem;
+    }
+    .enjoy-our-food{
+        min-height: 60vh;
     }
     /* End Enjoy */
 
